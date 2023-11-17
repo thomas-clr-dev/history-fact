@@ -1,0 +1,68 @@
+@import "../Styles/Var-style.scss";
+
+//NAVIGATION//
+.navbar {
+    background-color: $color-tertiary;
+    width: 15.75rem;
+    //height of the screen
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .NavLogo {
+        h1 {
+            color: $color-secondary;
+            font-size: 2rem;
+            font-weight: 600;
+            text-decoration: none;
+            font-family: $font-logo;
+            &--link {
+                color: $color-primary;
+                font-size: 2rem;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+    }
+    .NavMenu {
+        display: flex;
+        align-items: flex-start;
+        list-style: none;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: -22px;
+        .NavItem {
+            height: auto;
+            margin: 1rem 0;
+            padding: 1rem 0;
+            background-color: $color-tertiary;
+            box-sizing: border-box;
+            border-radius: 0.5rem;
+            display: flex;
+            &:hover {
+                background-color: $color-secondary;
+                transition: all 0.2s ease-in-out;
+            }
+            .nav-link {
+                color: $color-secondary;
+                font-size: $font-size-menu;
+                font-weight: 500;
+                text-decoration: none;
+                text-align: center;
+                width: auto;
+                height: auto;
+                margin: 0 1rem;
+                box-sizing: border-box;
+                &:hover {
+                    color: $color-accent;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+}
