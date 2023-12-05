@@ -26,8 +26,8 @@ const Navigation = () => {
                     </div>
                 </div>
                 <div className="NavFooter">
-                    <p>Nous Contacter</p>
-                    <p>Envoyer vos faits</p>
+                    <p className="NavFooterItem">Nous Contacter</p>
+                    <p className="NavFooterItem">Envoyer vos faits</p>
                 </div>
             </div>
         </section>
