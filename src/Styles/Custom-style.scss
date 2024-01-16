@@ -1,0 +1,133 @@
+@import "../Styles/Var-style.scss";
+
+.Customization {
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 252px;
+    width: 600px;
+
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    div {
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+
+            input {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .input-range {
+        margin-bottom: 20px;
+        width: 500px;
+
+        .input-range__slider {
+            background: $color-primary;
+            top: -20px;
+            border: 1px solid $black;
+        }
+        .input-range__label--value {
+            top: -50px !important;
+            color: $color-secondary;
+        }
+
+        .input-range_label,
+        .input-range__label--min,
+        .input-range__label--max {
+            color: $color-secondary !important;
+        }
+
+        .input-range__track--active {
+            background: $color-accent;
+        }
+    }
+
+    .boxCustomH1 {
+        background: $color-tertiary;
+        color: $black;
+        padding: 1rem;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        h1 {
+            font-family: $font-primary;
+            font-size: $font-size-large;
+            font-weight: 500;
+            color: $white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .boxCustomRange {
+        background: $color-secondary;
+        color: $black;
+        padding: 1rem;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        h3 {
+            font-family: $font-primary;
+            font-size: $font-size-menu;
+            font-weight: 500;
+            color: $black;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+        .label {
+            font-family: $font-primary;
+            font-size: $font-size-standard;
+            font-weight: 500;
+            color: $black;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .boxCustomHours {
+        background: $color-secondary;
+        color: $black;
+        padding: 1rem;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        width: 350px;
+        white-space: nowrap;
+        h3 {
+            font-family: $font-primary;
+            font-size: $font-size-menu;
+            font-weight: 500;
+            color: $black;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+        #HAlign {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            label {
+                font-family: $font-primary;
+                font-size: $font-size-standard;
+                font-weight: 500;
+                color: $black;
+                text-align: left;
+                margin: 0;
+                padding: 0;
+                input {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

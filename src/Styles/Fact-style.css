@@ -53,6 +53,19 @@
   background: gray;
   z-index: -1;
 }
+.timeline-container .eventNew {
+  background-color: #D2B48C;
+  padding: 1rem;
+  margin: 25px 0;
+  width: 416px;
+  text-align: center;
+  font-size: 1rem;
+}
+.timeline-container .eventNew:hover {
+  background-color: #24603F;
+  transition: rotate 0.2s linear;
+  color: #ffffff;
+}
 
 .selected-event {
   width: 1100px;

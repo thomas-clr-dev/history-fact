@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../Styles/Fact-style.scss";
 
 import Image1 from "../media/Image1.png";
@@ -22,13 +22,14 @@ import Image18 from "../media/Image18.png";
 import Image19 from "../media/Image19.png";
 
 const Timeline = () => {
+    const buttonRef = useRef(null);
+
     const events = [
         {
             year: "14 octobre 1066",
             title: "Bataille de Hastings",
             event: "Bataille de Hastings : Guillaume le Conquérant, duc de Normandie, défait le roi Harold II d'Angleterre, marquant le début de la dynastie normande en Angleterre.",
             image: Image1,
-            
         },
         {
             year: "4 juillet 1776",
@@ -106,37 +107,37 @@ const Timeline = () => {
             year: "30 avril 1975",
             title: "Fin de la guerre du Viêt Nam",
             event: "Fin de la guerre du Viêt Nam : Les forces nord-vietnamiennes capturent Saïgon, mettant fin à la guerre du Viêt Nam.",
-            image : Image14,
+            image: Image14,
         },
         {
             year: "26 avril 1986",
             title: "Explosion de la centrale nucléaire de Tchernobyl",
             event: "Explosion de la centrale nucléaire de Tchernobyl : Un réacteur nucléaire explose à Tchernobyl, en Ukraine, provoquant le pire accident nucléaire de l'histoire.",
-            image : Image15,
+            image: Image15,
         },
         {
             year: "5 juin 1967",
             title: "Début de la guerre des Six Jours",
             event: "Début de la guerre des Six Jours : Israël lance des attaques préventives contre ses voisins arabes, remportant une victoire rapide au cours de la guerre des Six Jours.",
-            image : Image16,
+            image: Image16,
         },
         {
             year: "11 mars 2011",
             title: "Séisme et tsunami au Japon",
             event: "Séisme et tsunami au Japon : Un violent séisme suivi d'un tsunami dévaste la côte nord-est du Japon, entraînant l'accident nucléaire de Fukushima.",
-            image : Image17,
+            image: Image17,
         },
         {
             year: "28 juin 1919",
             title: "Signature du Traité de Versailles",
             event: "Signature du Traité de Versailles : Mettant officiellement fin à la Première Guerre mondiale, le traité de paix est signé à Versailles, près de Paris.",
-            image : Image18,
+            image: Image18,
         },
         {
             year: "6 août 1945",
             title: "Lancement de la bombe atomique sur Hiroshima",
             event: "Lancement de la bombe atomique sur Hiroshima : Les États-Unis larguent une bombe atomique sur Hiroshima, accélérant la fin de la Seconde Guerre mondiale.",
-            image : Image19,
+            image: Image19,
         },
     ];
 
@@ -152,18 +153,42 @@ const Timeline = () => {
     // Effect to update the current event when the component mounts
     useEffect(() => {
         setCurrentEvent(getRandomEvent());
+
+        const button = buttonRef.current;
+        if (button) {
+            const handleClick = function () {
+                // Animation de tremblement
+                this.animate(
+                    [
+                        { transform: "rotate(0deg)" },
+                        { transform: "rotate(5deg)" },
+                        { transform: "rotate(-5deg)" },
+                        { transform: "rotate(0deg)" },
+                    ],
+                    {
+                        duration: 500,
+                        iterations: 1,
+                    }
+                );
+            };
+
+            button.addEventListener("click", handleClick);
+
+            return () => {
+                button.removeEventListener("click", handleClick);
+            };
+        }
     }, []);
 
     return (
         <div className="timeline-container">
-            <div className="eventNew">
-                <button
-                    className="btn"
-                    onClick={() => setCurrentEvent(getRandomEvent())}
-                >
-                    Un autre fait
-                </button>
-            </div>
+            <button
+                ref={buttonRef}
+                className="eventNew btn"
+                onClick={() => setCurrentEvent(getRandomEvent())}
+            >
+                Un autre fait
+            </button>
             <div className="timeline">
                 <div className="timeline-item">
                     <div className="timeline-item-content">

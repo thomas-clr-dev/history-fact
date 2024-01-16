@@ -1,0 +1,122 @@
+.Customization {
+  padding: 20px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 252px;
+  width: 600px;
+}
+.Customization h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.Customization div {
+  margin-bottom: 20px;
+}
+.Customization div label {
+  display: block;
+  margin-bottom: 10px;
+}
+.Customization div label input {
+  margin-left: 10px;
+}
+.Customization .input-range {
+  margin-bottom: 20px;
+  width: 500px;
+}
+.Customization .input-range .input-range__slider {
+  background: #D09D6A;
+  top: -20px;
+  border: 1px solid #000000;
+}
+.Customization .input-range .input-range__label--value {
+  top: -50px !important;
+  color: #D2B48C;
+}
+.Customization .input-range .input-range_label,
+.Customization .input-range .input-range__label--min,
+.Customization .input-range .input-range__label--max {
+  color: #D2B48C !important;
+}
+.Customization .input-range .input-range__track--active {
+  background: #24603F;
+}
+.Customization .boxCustomH1 {
+  background: #582900;
+  color: #000000;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.Customization .boxCustomH1 h1 {
+  font-family: "Aleo", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.Customization .boxCustomRange {
+  background: #D2B48C;
+  color: #000000;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.Customization .boxCustomRange h3 {
+  font-family: "Aleo", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.Customization .boxCustomRange .label {
+  font-family: "Aleo", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.Customization .boxCustomHours {
+  background: #D2B48C;
+  color: #000000;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 350px;
+  white-space: nowrap;
+}
+.Customization .boxCustomHours h3 {
+  font-family: "Aleo", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.Customization .boxCustomHours #HAlign {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Customization .boxCustomHours #HAlign label {
+  font-family: "Aleo", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.Customization .boxCustomHours #HAlign label input {
+  width: 100px;
+}/*# sourceMappingURL=Custom-style.css.map */

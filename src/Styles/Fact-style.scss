@@ -54,7 +54,24 @@
             }
         }
     }
+
+    .eventNew {
+        background-color: $color-secondary;
+        padding: 1rem;
+        margin: 25px 0;
+        width: 416px;
+        text-align: center;
+        font-size: $font-size-standard;
+        &:hover {
+            background-color: $color-accent;
+            transition: rotate 0.2s linear;
+            color: $white;
+        }
+
+    }
 }
+
+
 
 .selected-event {
     width: 1100px;
@@ -95,3 +112,4 @@
         }
     }
 }
+
