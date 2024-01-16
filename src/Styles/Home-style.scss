@@ -1,4 +1,64 @@
 @import "../Styles/Var-style.scss";
 
 
-   
+#homeSection {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    .boxhomeH1{
+        background-color: $color-tertiary;
+        padding: 1rem;
+        margin: 45px 0 69px 0;
+        width: 416px;
+        #homeH1{
+        font-family: $font-primary;
+        font-size: $font-size-large;
+        font-weight: 500;
+        color: $white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        }
+    }
+    .boxQuestion{
+        width: 911px;
+        margin-left: 136px;
+        .h3box{
+            background-color: $color-secondary;
+            padding: 1rem;
+            margin: 0 0 25px 0;
+            width: 416px;
+            height: 30px;
+            text-align: center;
+            h3{
+            font-family: $font-primary;
+            font-size: $font-size-menu;
+            font-weight: 500;
+            color: $black;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            }
+        }
+        .pQuestionbox{
+            background-color: $color-secondary;
+            padding: 1rem;
+            margin: 0 0 25px 0;
+            width: 911px;
+            height: 90px;
+            text-align: center;
+            p{
+            font-family: $font-primary;
+            font-size: $font-size-standard;
+            font-weight: 500;
+            color: $black;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            }
+        }
+        
+    }
+}

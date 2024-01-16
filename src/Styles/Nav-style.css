@@ -1,0 +1,77 @@
+.navbar {
+  background-color: #582900;
+  width: 15.75rem;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar .NavLogo h1 {
+  color: #D2B48C;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Jacques Francois Shadow", serif;
+}
+.navbar .NavLogo h1--link {
+  color: #D09D6A;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .NavMenu {
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: -22px;
+}
+.navbar .NavMenu .NavItem {
+  height: auto;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  background-color: #582900;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  display: flex;
+}
+.navbar .NavMenu .NavItem:hover {
+  background-color: #D2B48C;
+  transition: all 0.2s ease-in-out;
+}
+.navbar .NavMenu .NavItem .nav-link {
+  color: #24603F;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 0 1rem;
+  box-sizing: border-box;
+}
+.navbar .NavFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .NavFooter .NavFooterItem {
+  margin: 1rem 0.37rem;
+  padding: 1rem 0;
+  background-color: #582900;
+  color: #000000;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  display: flex;
+}
+.navbar .NavFooter .NavFooterItem:hover {
+  background-color: #D2B48C;
+  transition: all 0.2s ease-in-out;
+}/*# sourceMappingURL=Nav-style.css.map */
