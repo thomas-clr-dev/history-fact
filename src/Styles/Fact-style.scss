@@ -26,9 +26,10 @@
                 height: 20px;
                 .year {
                     position: absolute;
-                    top: -20px;
-                    left: -10px;
-                    font-size: 0.8em;
+                    top: 25px;
+                    left: -35px;
+                    font-size: $font-size-standard;
+                    white-space: nowrap;
                 }
                 .dot {
                     position: absolute;
@@ -39,6 +40,16 @@
                     height: 10px;
                     background: gray;
                     border-radius: 50%;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: -1000px; // Ajustez cette valeur en fonction de la largeur de votre écran
+                        width: 106vw; // Ajustez cette valeur en fonction de la largeur de votre écran
+                        height: 1px;
+                        background: gray;
+                        z-index: -1;
+                    }
                 }
             }
         }
@@ -54,8 +65,9 @@
     .eventDesc {
         background: $color-secondary;
         border-radius: 10px;
-        padding: 50px 0;
+        padding: 35px;
         width: 350px;
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.6);
         .eventTitle {
             font-size: 2em;
             font-weight: bold;
@@ -70,15 +82,16 @@
             text-align: center;
         }
     }
-    .eventImg{
+    .eventImg {
         width: 500px;
         height: 500px;
         border-radius: 10px;
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.8);
         .eventImgDetail {
-        width: 500px;
-        height: 500px;
-        border-radius: 10px;
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
     }
-    }
-    
 }

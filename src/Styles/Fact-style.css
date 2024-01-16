@@ -28,9 +28,10 @@
 }
 .timeline-container .timeline .timeline-item .timeline-item-content .year {
   position: absolute;
-  top: -20px;
-  left: -10px;
-  font-size: 0.8em;
+  top: 25px;
+  left: -35px;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 .timeline-container .timeline .timeline-item .timeline-item-content .dot {
   position: absolute;
@@ -41,6 +42,16 @@
   height: 10px;
   background: gray;
   border-radius: 50%;
+}
+.timeline-container .timeline .timeline-item .timeline-item-content .dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1000px;
+  width: 106vw;
+  height: 1px;
+  background: gray;
+  z-index: -1;
 }
 
 .selected-event {
@@ -53,8 +64,9 @@
 .selected-event .eventDesc {
   background: #D2B48C;
   border-radius: 10px;
-  padding: 50px 0;
+  padding: 35px;
   width: 350px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.6);
 }
 .selected-event .eventDesc .eventTitle {
   font-size: 2em;
@@ -73,9 +85,12 @@
   width: 500px;
   height: 500px;
   border-radius: 10px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.8);
 }
 .selected-event .eventImg .eventImgDetail {
   width: 500px;
   height: 500px;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=Fact-style.css.map */
